@@ -5,9 +5,8 @@ import { getProjects } from '@/sanity/schemas/sanity-utils';
 import { Project } from '@/types/Project';
 import Link from 'next/link';
 import '../globals.css';
-import Social_media from '../../components/Social_media';
 import Project_list from '../../components/Project_list';
-import monitor from '/monitor.png';
+
 
 
 export default async function Home() {
@@ -30,11 +29,11 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-blac
         <p className='mt-3 text-2xl text-slate-900 text-center hover:text-blue-500'>
           <Link href='/services'>Web Development & Computer Services</Link>
         </p>
-        <div className='flex items-center justify-center w-full'>
+        <div className='flex items-center justify-center w-full p-6'>
           <Link
           href={'/contact'}
           title='Contact Me'
-          className='bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-blue-500 hover:text-blue-100 transition text-2xl'
+          className='bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-5 whitespace-nowrap hover:bg-blue-500 hover:text-blue-100 transition text-3xl'
           >
             Contact Me
           </Link>
