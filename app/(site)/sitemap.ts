@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://lorenzowashington/about-me',
+      url: 'https://lorenzowashington.com/about-me',
       lastModified: new Date(),
       changeFrequency,
       priority: 0.8,
