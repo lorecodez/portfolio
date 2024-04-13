@@ -27,6 +27,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className='pb-20 pt-12 h-fit flex flex-col justify-center w-full ' >
           {children}
         </main>
+        <h3 className='hidden'>
+          Web development , web design , computer repair , technical support , seo , digital marketing , small business , computer , laptop, phone , smart phone , pc, windows , mac , ios ,
+          iphone , troubleshoot , troubleshooting , repairing , desktop , graphics , graphic design , router , modem , printer , software , hardware , pc build , pc building , linux , server , admin ,
+          technician , network , internet , wordpress , wordpress designer, wordpress developer , hosting , webflow , webflow designer , webflow developer , squarespace , network , wifi , ps4 , ps5 , xbox ,
+          microsoft , mobile , lorenzo , washington , problem , trouble , technology , radio , vallejo , benicia , napa , fairfield , sonoma , solano , student , servicing California , servicing vallejo ,
+          computer repair vallejo. 
+        </h3>
       </body>
       <hr/>
       <div className='bottom-0 h-fit'>
