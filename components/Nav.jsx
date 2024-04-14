@@ -17,19 +17,43 @@ export default function Nav() {
         </button>
       </div>
       <nav className={`flex lg:flex-row ${navBar ? 'flex-col transition' : 'hidden lg:flex transition'} justify-between items-center lg:w-full w-fit`}>
-        <Link href='/' onClick={() => setNavBar(!navBar)}  className='  lg:mb-0 mb-2 text-center primary-bg text-2xl font-bold drop-shadow hover:scale-105 transition'>
+        <Link 
+        href='/' 
+        title='Home'
+        onClick={() => setNavBar(!navBar)}  
+        className='lg:mb-0 mb-2 text-center primary-bg text-2xl font-bold drop-shadow hover:scale-105 transition'
+        >
           Home
         </Link>
-        <Link href='/services' onClick={() => setNavBar(!navBar)} className=' lg:my-0 my-2  text-center text-2xl font-bold drop-shadow hover:scale-105 transition'>
+        <Link 
+        href='/services' 
+        title='Services'
+        onClick={() => setNavBar(!navBar)} 
+        className=' lg:my-0 my-2  text-center text-2xl font-bold drop-shadow hover:scale-105 transition'
+        >
           Services
         </Link>
-        <Link href='/blog' onClick={() => setNavBar(!navBar)} className=' lg:my-0 my-2 text-center text-2xl font-bold drop-shadow hover:scale-105 transition'>
+        <Link 
+        href='/blog' 
+        title='Blog'
+        onClick={() => setNavBar(!navBar)} 
+        className=' lg:my-0 my-2 text-center text-2xl font-bold drop-shadow hover:scale-105 transition'
+        >
           Blog
         </Link>
-        <Link href='/about-me' onClick={() => setNavBar(!navBar)} className=' lg:my-0 my-2 text-center text-2xl font-bold drop-shadow hover:scale-105 transition'>
+        <Link 
+        href='/about-me'
+        title='About Me' 
+        onClick={() => setNavBar(!navBar)} 
+        className=' lg:my-0 my-2 text-center text-2xl font-bold drop-shadow hover:scale-105 transition'
+        >
           About Me
         </Link>
-        <Link href='/contact' onClick={() => setNavBar(!navBar)} className=' lg:my-0 my-2 text-center text-2xl font-bold drop-shadow hover:scale-105 transition'>
+        <Link href='/contact' 
+        onClick={() => setNavBar(!navBar)} 
+        className=' lg:my-0 my-2 text-center text-2xl font-bold drop-shadow hover:scale-105 transition'
+        title='Contact Me'
+        >
           Contact
         </Link>
       </nav>

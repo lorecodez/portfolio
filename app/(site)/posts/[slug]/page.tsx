@@ -1,11 +1,9 @@
 import React from 'react';
 import { getPost } from '@/sanity/schemas/sanity-utils';
 import Image from 'next/image';
-import {BlogPost} from '@/typings';
-import category from '@/sanity/schemas/category';
 import { PortableText } from '@portabletext/react';
 import {PortableTextBlock} from '@portabletext/types'
-import { RichTextComponets } from '@/components/RichTextComponets';
+
 
 type Props = {
     params: {slug: string};
@@ -18,8 +16,8 @@ export default async function post({ params }: Props) {
 
     const slug = params.slug;
     const post = await getPost(slug);
-    console.log(slug);
-    console.log(post);
+    console.log('Loading page: ' + slug);
+    console.log('Loading post: ' + post);
 
 
 

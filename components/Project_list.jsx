@@ -3,8 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Project } from '@/types/Project';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Pagination from './Pagination';
 
 export default function Project_list({projects}) {
@@ -26,7 +25,8 @@ export default function Project_list({projects}) {
             <Link 
             href={
               project.slug == 'minecraft' ? '/minecraft' : `/projects/${project.slug}`
-            } 
+            }
+            title={project.name}
             key={project._id} 
             className='border-2 border-grey-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition'>
               {project.image && (

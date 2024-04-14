@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Yelp_reviews from "@/components/Yelp_reviews";
 
 export default function services(){
     return(
@@ -11,52 +10,65 @@ export default function services(){
                             What Can I Do For You?
                         </h1>
                     </legend>
-                    <Link 
-                        className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
-                        href='/services/web-dev'>
-                            Web Development
+                    <Link
+                    title="Web Development"
+                    className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
+                    href='/services/web-dev'
+                    >
+                        Web Development
                     </Link>
                     <Link 
-                        className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
-                        href='/services/repair'>
-                            Desktop & Laptop Repair
+                    className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
+                    href='/services/repair'
+                    title="Desktop & Laptop Repair"
+                    >
+                        Desktop & Laptop Repair
                     </Link>
                     <Link 
-                        className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
-                        href='/services/data'>
-                            Data Transfer
+                    className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
+                    href='/services/data'
+                    title="Data Transfer"
+                    >
+                        Data Transfer
                     </Link>
                     <Link 
-                        className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
-                        href='/services/builds'>
-                            Custom Computer Builds
+                    className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
+                    href='/services/builds'
+                    title="Custom Computer Builds"
+                    >
+                        Custom Computer Builds
                     </Link>
                     <Link 
-                        className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
-                        href='/services/virus'>
-                            Virus and Malware Removal
+                    className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
+                    href='/services/virus'
+                    title="Virus and Malware Removal"
+                    >
+                        Virus and Malware Removal
                     </Link>
                     <Link 
-                        className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
-                        href='/services/support'>
-                            Technical Support
+                    className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
+                    href='/services/support'
+                    title="Technical Support"
+                    >
+                        Technical Support
                     </Link>
                     <Link 
-                        className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
-                        href='/services/network'>
-                            Home Network Configuration
+                    className='px-4 hover:scale-105 text-gray-500 hover:bg-blue-600 hover:text-blue-100 transition whitespace-nowrap rounded-lg bg-gray-100' 
+                    href='/services/network'
+                    title="Home Network Configuration"
+                    >
+                        Home Network Configuration
                     </Link>
                 </fieldset>
                 <div className="p-10 group text-center">
                     <h3 className="font-bold text-center pt text-2xl">
                         Not finding what you are looking for?
                     </h3>
-                    <Link href='/contact' className="font-bold text-center text-lg group-hover:scale-105 transition py-2 hover:underline w-min">
+                    <Link title="Need Something Custome Clicke Here" href='/contact' className="font-bold text-center text-lg group-hover:scale-105 transition py-2 hover:underline w-min">
                          click here to send us a message to see if we offer what you need as a service.
                     </Link>
                 </div>
             </section>
-            <Yelp_reviews/>
         </div>
     );
 }

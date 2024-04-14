@@ -23,12 +23,12 @@ export default function Footer() {
                     <h2 className='font-bold mt-4'>Navigate</h2>
                     {/* links go here */}
                     <menu className='grid grid-cols-2 gap-x-4 w-max gap-y-0 md:text-left text-center'>
-                        <li className='hover:underline '><Link href='/about-me'>About Me</Link></li>
-                        <li className='hover:underline '><Link href='/contact'>Contact</Link></li>
-                        <li className='hover:underline '><Link href='/blog'>Blog</Link></li>
-                        <li className='hover:underline '><Link href='https://www.dropbox.com/scl/fi/pmukc709z5phi7po7x1ih/lorenzo-washington-resume.docx?rlkey=dr0haej8jmvt2xug1is8g9cwp&dl=0'>Resume</Link></li>
-                        <li className='hover:underline '><Link href='/services'>Services</Link></li>
-                        <li className='hover:underline '><Link href='/minecraft'>MC Server</Link></li>    
+                        <li title="About Me" className='hover:underline '><Link href='/about-me'>About Me</Link></li>
+                        <li title="Contact Me" className='hover:underline '><Link href='/contact'>Contact</Link></li>
+                        <li title="Blog" className='hover:underline '><Link href='/blog'>Blog</Link></li>
+                        <li title="Resume" className='hover:underline '><Link href='https://www.dropbox.com/scl/fi/pmukc709z5phi7po7x1ih/lorenzo-washington-resume.docx?rlkey=dr0haej8jmvt2xug1is8g9cwp&dl=0'>Resume</Link></li>
+                        <li title="Services" className='hover:underline '><Link href='/services'>Services</Link></li>
+                        <li title="Minecraft Server" className='hover:underline '><Link href='/minecraft'>MC Server</Link></li>    
                     </menu>
                 </nav>
             </footer>
@@ -36,17 +36,17 @@ export default function Footer() {
                 <div className="w-full flex flex-row items-center justify-center">
                     {/* contact info */}
                     <FaPhone/> 
-                    <a href='tel:+17758154240' className='w-fit text-center px-1'>
+                    <a title="Phone Number" href='tel:+17758154240' className='w-fit text-center px-1'>
                         +1(707) 654-9762&#x2022;
                     </a>
                     <FaEnvelope/> 
-                    <a href='mailto:contact@lorenzowashington.com' className='wit-fit text-center px-1'>
+                    <a title="Email Address" href='mailto:contact@lorenzowashington.com' className='wit-fit text-center px-1'>
                         contact@lorenzowashington.com
                     </a>
                 </div>
                 <div className="w-full text-center">
                     <span> © 2023 All rights reserved </span>
-                    <Link href='/privacy' className='px-2 hover:underline'> Privacy Policy </Link>
+                    <Link title="View Privacy Policy" href='/privacy' className='px-2 hover:underline'> Privacy Policy </Link>
                 </div>
                 
             </footer>

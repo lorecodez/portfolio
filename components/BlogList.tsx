@@ -1,8 +1,6 @@
 import React from 'react'
-import {PortableTextBlock} from 'sanity';
 import Image from 'next/image';
 import Link from 'next/link';
-import category from '@/sanity/schemas/category';
 import {BlogPost} from '@/typings';
 import { getBlogPosts } from '@/sanity/schemas/sanity-utils';
 
@@ -27,14 +25,14 @@ export default async function BlogList() {
   
   const posts = await getBlogPosts();
 
-  posts? posts.map((post: BlogPost) => (console.log(post.title +':'+ post.categories))) : console.log('fetch error');
+  posts? posts.map((post: BlogPost) => (console.log( "Loading Post " + post.title +':'+ post.categories))) : console.log('fetch error');
 
   return (
     <section id='blog-list' className='w-full h-full'>
       <hr className='border-slate-900 mb-10' />
       <menu className='w-full h-full grid lg:grid-cols-2 md:gird-cols-2 gap-8'>
         {posts.map(post => (
-          <Link key={post._id} href={`/posts/${post.slug}`} className='group cursor-pointer flex-col justify-center w-'>
+          <Link title={post.title} key={post._id} href={`/posts/${post.slug}`} className='group cursor-pointer flex-col justify-center w-'>
             <div className=' w-full h-80 drop-shadow group-hover:scale-105 transition-transform duration-200 ease-out flex justify-center'>
               <Image
                 className='object-cover h-80 w-full rounded-lg border border-grey-500 lg:object-center'

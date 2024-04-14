@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from '../images/profile-pic.jpg'
+import profilePic from '@/app/(site)/images/profile-pic.jpg'
 export default function page() {
     return (
         <div>
