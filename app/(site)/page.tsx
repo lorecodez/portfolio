@@ -11,7 +11,7 @@ import Project_list from '../../components/Project_list';
 
 export default async function Home() {
 const projects = await getProjects();
-projects ? projects.map((project: Project) => (console.log(project.name))) : console.log('fetch error');
+projects ? projects.map((project: Project) => (console.log("Loading project: " + project.name))) : console.log('fetch error');
 
 
   return (
@@ -27,7 +27,7 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-blac
           </h1>
         </div>
         <p className='mt-3 text-2xl text-slate-900 text-center hover:text-blue-500'>
-          <Link href='/services'>Web Development & Computer Services</Link>
+          <Link href='/services' title='Services'>Web Development & Computer Services</Link>
         </p>
         <div className='flex items-center justify-center w-full p-6'>
           <Link
