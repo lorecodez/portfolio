@@ -15,6 +15,13 @@ export default function contact() {
                 </div>
                 <Social_media/>
             </div>
+            <h3 className='hidden'>
+                Web development , web design , computer repair , technical support , seo , digital marketing , small business , computer , laptop, phone , smart phone , pc, windows , mac , ios ,
+                iphone , troubleshoot , troubleshooting , repairing , desktop , graphics , graphic design , router , modem , printer , software , hardware , pc build , pc building , linux , server , admin ,
+                technician , network , internet , wordpress , wordpress designer, wordpress developer , hosting , webflow , webflow designer , webflow developer , squarespace , network , wifi , ps4 , ps5 , xbox ,
+                microsoft , mobile , lorenzo , washington , problem , trouble , technology , radio , vallejo , benicia , napa , fairfield , sonoma , solano , student , servicing California , servicing vallejo ,
+                computer repair vallejo. 
+            </h3>
         </div>
     );
 }
