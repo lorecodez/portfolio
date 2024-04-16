@@ -3,7 +3,6 @@ import {createClient, groq} from 'next-sanity';
 import {Project} from '@/types/Project';
 import {BlogPost} from '@/typings';
 import clientConfig from '../config/client-config';
-import 'server';
 
 
 

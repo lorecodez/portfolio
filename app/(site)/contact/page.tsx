@@ -1,4 +1,4 @@
-"use client"
+
 
 import Contact_form from '../../../components/Contact_form';
 import Social_media from '@/components/Social_media';
