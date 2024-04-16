@@ -1,4 +1,4 @@
-
+"use client"
 import { FaEnvelope } from "react-icons/fa6"; 
 import React from 'react';
 import { useRef } from 'react';
