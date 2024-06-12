@@ -43,7 +43,7 @@ export async function getProjects(): Promise<Project[]>{
       content
     }`, 
     { slug },
-    {cache: 'no-store'}
+    {cache: 'no-store'},
   )
 
   return data;
@@ -62,8 +62,8 @@ export async function getBlogPosts(): Promise<BlogPost[]>{
       title,
       description,
     }`,
+    {},
     {cache: 'no-store'},
-    {cache: 'no-store'}
   );
 
   return data;
